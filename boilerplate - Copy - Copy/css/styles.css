@@ -1,0 +1,200 @@
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    color: #111;
+    background-color:  #EDEDED;
+}
+
+.image-container{
+    padding: 3rem;
+}
+
+.white-wrapper{
+    background-color: #FFF;
+}
+
+nav .flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: black;
+    padding: 5rem 6rem;
+}
+
+header nav ul li a {
+    padding: 3rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #EDEDED;
+}
+
+header nav ul li{
+    margin-top: 3rem;
+}
+
+h1, h2, h3, 
+section:nth-child(1) > p, 
+footer p{
+    text-align: center;
+}
+
+
+h1{
+    font-size: 3rem;
+    padding:4rem 5rem 0 ;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2.6rem;
+}
+
+p{
+    margin: 0 3.2rem;
+}
+
+div:nth-child(1) > section > a,
+div > a{
+    background-color: #111;
+    border-radius: 0.75rem;
+    color: #FFF;
+    display: block;
+    text-align: center;
+    padding: 1.75rem;
+    font-size: 1.5rem;
+    margin: 0 16rem;
+}
+
+section:nth-child(1) > p{
+    margin: 3.5rem 4rem;
+}
+
+.star{
+    font-weight: 700;
+    font-size:3.9rem;
+    text-align: center;
+}
+
+section:nth-child(1) .star{
+    padding-top: 6rem;
+}
+
+div:nth-child(3) > section:nth-child(2) > ul,
+div:nth-child(1) > div:nth-child(3) > section:nth-child(3) > ul{
+    padding-left: 3.2rem;
+}
+
+section:nth-child(7) > p{
+    padding-bottom: 5rem;
+}
+
+div:nth-child(2) > ul{
+    text-align: center;
+    background-color: #111;
+    font-size: 2.9rem;
+    color: #EDEDED;
+    padding: 6.6rem 3.2rem 4.8rem 3.2rem;
+}
+
+div:nth-child(2) > ul > li:nth-child(2),
+div:nth-child(2) > ul > li:nth-child(3){
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+div:nth-child(2) > ul > li:nth-child(3){
+        color:  #A4A4A4;
+    } 
+
+.centered-section{
+    padding: 3.2rem; 
+}
+
+section > div > h2{
+    padding:  9rem 9.6rem 0;
+}
+
+section > div > p{
+    margin: 0 5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+body > div > section > div{
+    padding-bottom: 8rem;
+}
+
+footer{
+    background-color: #111;
+    padding: 3.2rem 6.4rem 8rem 6.4rem;
+}
+
+footer p, 
+footer h2,
+footer a{
+    color: #EDEDED;
+    font-size: 1.5rem;
+}
+
+footer h2{
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+footer p{
+    margin-bottom: 4rem;
+}
+
+footer a{
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 0.75rem;
+} 
+footer section{
+    margin-left: 4rem;
+}
+
+footer .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 700px) {
+    .card-deck .card-container{
+        flex-flow: column;
+    }
+
+    h3{
+        text-align: left;
+        padding-left: 3.2rem;
+    }
+
+    .card-deck{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-deck .card-container{
+        width: calc(100% / 2 - 0.5rem);
+    }
+
+    .card-container > *{
+        width: unset;
+    }
+}
