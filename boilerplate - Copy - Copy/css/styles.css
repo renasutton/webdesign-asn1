@@ -230,12 +230,11 @@ footer .flex-container{
         display: block;
         text-align: left;
     }
-    
-    .card-deck > section:nth-child(2) > div > .image-container, .card-deck > section:nth-child(3) > div > .image-container, .card-description{
-        width: calc(100% / 2);
-        padding-bottom: 0
-    }
 
+    .flex-container div{
+        width: calc(100% / 2 - 0.5rem)
+    }
+ 
     body > div.card-deck > section:nth-child(2) > div > div.image-container{
         padding: 2rem 3.2rem 4.8rem 0;
     }
@@ -281,11 +280,6 @@ footer .flex-container{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-    }
-
-    .card-description{
-        display: flex;
-        flex-wrap: wrap;
     }
     
     div.card-deck > section:nth-child(3) .card-description{
