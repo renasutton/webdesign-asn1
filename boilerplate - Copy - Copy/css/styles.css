@@ -187,9 +187,12 @@ footer .flex-container{
 @media screen and (min-width: 700px) {
 
     .flex-container, .card-deck{
-        display: flex;
         justify-content: space-between;
         flex-direction: row;
+    }
+
+    .cluster{
+        display: flex;
     }
 
     .card-deck {
@@ -232,7 +235,7 @@ footer .flex-container{
     }
 
     .flex-container div{
-        width: calc(100% / 2 - 0.5rem)
+        width: calc(100% / 2 - 0.5rem);
     }
  
     body > div.card-deck > section:nth-child(2) > div > div.image-container{
@@ -266,7 +269,7 @@ footer .flex-container{
         margin: 2rem 0 ;
     }
 
-.centered-section{
+    .centered-section{
     padding: 3.2rem 19rem; 
 }
 
@@ -303,4 +306,8 @@ footer .flex-container{
 @media screen and (min-width: 1440px) {
     
 }
+}
+
+.large-p{
+    font-size: 3rem;
 }
