@@ -203,7 +203,7 @@ body > div.white-wrapper > p{
     text-align: center;
 }
 
-.page-2 h1{
+.gallery h1{
     padding-bottom: 3rem;
 }
 
@@ -217,7 +217,7 @@ body > div.flex-container{
 }
 
 
-.page-2 p{
+.gallery p{
     text-align: left;
 }
 
@@ -310,15 +310,15 @@ body > div.flex-container{
     padding: 3.2rem 19rem; 
     }
 
-    .page-2 .flex-container div{
+    .gallery .flex-container div{
         width: calc(100% / 2 - 0.5);
     }
 
-    .page-2 p, .page-2 .image-container{
+    .gallery p, .gallery .image-container{
         padding: 0;
     }
     
-    .page-2 .image-container{
+    .gallery .image-container{
         padding-left: 3.2rem;
     }
 
