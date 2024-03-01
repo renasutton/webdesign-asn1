@@ -7,8 +7,13 @@ body{
     background-color:  #EDEDED;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .image-container{
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .white-wrapper{
@@ -16,7 +21,6 @@ body{
 }
 
 nav .flex-container{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -25,17 +29,17 @@ nav .flex-container{
 header{
     background-color: black;
     padding: 5rem 6rem;
+    
 }
 
 header nav ul li a {
-    padding: 3rem;
     font-weight: 700;
     font-size: 2rem;
     color: #EDEDED;
 }
 
-header nav ul li{
-    margin-top: 3rem;
+header ul{
+    padding: 0 3rem;
 }
 
 h1, h2, h3, 
@@ -65,16 +69,21 @@ p{
     margin: 0 3.2rem;
 }
 
+body > div:first-of-type > section,
+body > section > div
+{
+    text-align: center;
+}
+
 div:nth-child(2) > section > a,
 div > a{
     background-color: #111;
     border-radius: 0.75rem;
     color: #FFF;
-    display: block;
-    text-align: center;
+    display: inline-block;
     padding: 1.75rem;
     font-size: 1.5rem;
-    margin: 2rem 16rem 0;
+    margin: 2rem 0;
 }
 
 section:nth-child(1) > p{
@@ -177,15 +186,14 @@ footer .flex-container{
 
 @media screen and (min-width: 700px) {
 
-    .flex-container{
+    .flex-container, .card-deck{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .card-deck {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+         flex-wrap: wrap;
     }
 
     h3, .star{
@@ -211,8 +219,13 @@ footer .flex-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0rem;
+        padding: 3rem 0rem 2rem 5rem;
     }
+
+    header a {
+        margin-right: 4rem;
+    }
+
     .card-description{
         display: block;
         text-align: left;
@@ -241,45 +254,59 @@ footer .flex-container{
     }
 
     footer{
-        padding: 1rem 6rem 5rem 5rem;
+        padding: 3rem 6rem 5rem
     }
 
     footer p{
         text-align: left;
         margin: 0;
         font-size: 1.3rem;
-        margin-left: 3rem;
     }
 
-footer h2{
-    margin: 4rem 0 0;
-}
+    footer h2{
+        margin: 2rem 0 ;
+    }
 
 .centered-section{
     padding: 3.2rem 19rem; 
 }
-}
 
 @media screen and (min-width: 1100px) {
-    
+
     .card-container {
         width: calc(100% / 3 - 0.5rem);
     }
 
-    .flex-container{
+    .card-deck .flex-container{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        
     }
 
     .card-description{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+    }
+    
+    div.card-deck > section:nth-child(3) .card-description{
+        order: initial;
+    }
+
+    .card-description{
+       display: unset;
     }
 
     div:nth-child(4) > ul > li:nth-child(1){
         margin:  0 17rem;
     }
+
+    body > div.card-deck > section:nth-child(1),
+    body > div:nth-child(2) > div > section:nth-child(1){
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
 }
