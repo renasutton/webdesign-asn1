@@ -1,0 +1,373 @@
+body{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    color: #111;
+    background-color:  #EDEDED;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container{
+    padding: 0 3.2rem;
+}
+
+.white-wrapper{
+    background-color: #FFF;
+}
+
+nav .flex-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: black;
+    padding: 5rem 6rem;
+    
+}
+
+header nav ul li a {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #EDEDED;
+}
+
+header ul{
+    padding: 0 3rem;
+}
+
+h1, h2, h3, 
+section:nth-child(1) > p, 
+footer p{
+    text-align: center;
+}
+
+
+h1{
+    font-size: 3rem;
+    padding:4rem 5rem 0 ;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    margin: 0 3.2rem;
+}
+
+body > div:first-of-type > section,
+body > section > div
+{
+    text-align: center;
+}
+
+div:nth-child(2) > section > a,
+div > a{
+    background-color: #111;
+    border-radius: 0.75rem;
+    color: #FFF;
+    display: inline-block;
+    padding: 1.75rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+section:nth-child(1) > p{
+    margin: 3.5rem 4rem 0;
+}
+
+.star{
+    font-weight: 700;
+    font-size:3.9rem;
+    text-align: center;
+    padding: 2rem 0 0;
+}
+
+section:nth-child(1) .star{
+    padding-top: 6rem;
+}
+
+.card-deck > section:nth-child(2) > div > .card-description > ul,
+.card-deck > section:nth-child(3) > div > .card-description > ul{
+    padding-left: 3.2rem;
+}
+
+.card-deck{
+    padding-bottom: 3rem;
+}
+
+div:nth-child(4) > ul{
+    text-align: center;
+    background-color: #111;
+    font-size: 2.9rem;
+    color: #EDEDED;
+    padding: 6.6rem 3.2rem 4.8rem 3.2rem;
+}
+
+div:nth-child(4) > ul > li:nth-child(2),
+div:nth-child(4) > ul > li:nth-child(3){
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+div:nth-child(4) > ul > li:nth-child(3){
+        color:  #A4A4A4;
+    } 
+
+.centered-section{
+    padding: 3.2rem; 
+}
+
+section > div > h2{
+    padding:  9rem 9.6rem 0;
+}
+
+section > div > p{
+    margin: 0 5rem;
+    text-align: center;
+}
+
+body > section > div{
+    padding-bottom: 5rem;
+}
+
+
+footer{
+    background-color: #111;
+    padding: 3.2rem 6.4rem 8rem 6.4rem;
+}
+
+footer p, 
+footer h2,
+footer a{
+    color: #EDEDED;
+    font-size: 1.5rem;
+}
+
+footer h2{
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+footer p{
+    margin-bottom: 4rem;
+}
+
+footer a{
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 0.75rem;
+} 
+footer section{
+    margin-left: 4rem;
+}
+
+footer .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .image-container{
+    width: 100%;
+}
+
+body > section > div:nth-child(4) > p:nth-child(1),
+body > section > div:nth-child(4) > p:nth-child(2){
+     padding-bottom: 3rem;
+}
+
+.large-p{
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+
+body > div.white-wrapper > p{
+    padding: 7rem 2rem;
+    text-align: center;
+}
+
+.gallery h1{
+    padding-bottom: 3rem;
+}
+
+
+
+body > div.flex-container{
+    background-color: #111;
+    padding: 3rem 0;
+   color: #EDEDED;
+  margin-bottom: 4rem;
+}
+
+
+.gallery p{
+    text-align: left;
+}
+
+@media screen and (min-width: 700px) {
+
+    .flex-container, .card-deck{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .cluster{
+        display: flex;
+    }
+
+    .card-deck {
+         flex-wrap: wrap;
+    }
+
+    h3, .star{
+        text-align: left;
+        padding-left: 3.2rem;
+    }
+
+    .card-deck > section:nth-child(2) > div > .card-description > ul,
+    .card-deck > section:nth-child(3) > div > .card-description > ul{
+        padding-left: 6.4rem;
+    }
+
+    div:nth-child(2) > section:nth-child(1) > .star,
+    div.card-deck > section:nth-child(1) > .star{
+        text-align: center;
+    }
+
+    .card-container {
+        width: calc(100% / 2 - 0.5rem);
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 0rem 2rem 5rem;
+    }
+
+    header a {
+        margin-right: 4rem;
+    }
+
+    .card-description{
+        display: block;
+        text-align: left;
+    }
+
+    .flex-container div{
+        width: calc(100% / 2 - 0.5rem);
+    }
+ 
+    body > div.card-deck > section:nth-child(2) > div > div.image-container{
+        padding: 2rem 3.2rem 4.8rem 0;
+    }
+
+    body > div.card-deck > section:nth-child(3) > div > div.image-container{
+        padding: 0 0 0 3.2rem;
+    }
+
+    div.card-deck > section:nth-child(3) .card-description
+    {
+        order: 2;
+    }
+
+    div:nth-child(4) > ul > li:nth-child(1){
+        margin:  0 7rem;
+    }
+
+    footer{
+        padding: 3rem 6rem 5rem
+    }
+
+    footer p{
+        text-align: left;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    footer h2{
+        margin: 2rem 0 ;
+    }
+
+    .centered-section{
+    padding: 3.2rem 19rem; 
+    }
+
+    .gallery .flex-container div{
+        width: calc(100% / 2 - 0.5);
+    }
+
+    .gallery p, .gallery .image-container{
+        padding: 0;
+    }
+    
+    .gallery .image-container{
+        padding-left: 3.2rem;
+    }
+
+    body > div.flex-container > div:nth-child(2) > div > div{
+        padding-right: 3.2rem;
+    }
+    
+
+    body > section > div:nth-child(3) > div:nth-child(1) > div,
+    body > div.flex-container > div:nth-child(1) > div,
+    body > div.flex-container > div:nth-child(2) > div > div,
+    body > div.flex-container > div:nth-child(2) > div{
+        width: 100%;
+    }
+
+@media screen and (min-width: 1100px) {
+
+    .card-container {
+        width: calc(100% / 3 - 0.5rem);
+    }
+
+    .card-deck .flex-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    div.card-deck > section:nth-child(3) .card-description{
+        order: initial;
+    }
+
+    .card-description{
+       display: unset;
+    }
+
+    div:nth-child(4) > ul > li:nth-child(1){
+        margin:  0 17rem;
+    }
+
+    body > div.card-deck > section:nth-child(1),
+    body > div:nth-child(2) > div > section:nth-child(1){
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body > *:not(header):not(footer) {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+}
